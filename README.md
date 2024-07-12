@@ -34,9 +34,8 @@ To get started with MyBuddy locally, follow these steps:
    cd my-buddy
 
 2. Set up a Virtual Environment and install dependencies:
-   
-    python -m venv venv
    ---bash
+    python -m venv venv
     venv\Scripts\activate  # On Mac use  'source venv/bin/activate' 
     pip install -r requirements.txt
    ```
