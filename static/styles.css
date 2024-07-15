@@ -4,11 +4,13 @@ body {
     color: #e0e0e0; /* Light text color */
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
 }
 
 header {
     background-color: #333; /* Darker header background */
     padding: 10px 0;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
 .navbar {
@@ -32,7 +34,7 @@ header {
     font-weight: bold;
     font-size: 18px;
     padding: 10px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Smooth transition for text color */
 }
 
 .navbar ul li a:hover {
@@ -58,6 +60,7 @@ header {
     box-shadow: 0 0 10px rgba(255,255,255,0.1); /* Soft shadow */
     display: flex;
     flex-direction: column;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
 .content {
@@ -66,6 +69,7 @@ header {
     font-size: 1.2rem;
     font-style: italic;
     color: #ccc; /* Light text color */
+    transition: color 0.3s ease; /* Smooth transition for text color */
 }
 
 .image-container {
@@ -77,18 +81,25 @@ header {
     max-width: 100%;
     height: 420px;
     border-radius: 8px;
+    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Scale up image on hover */
 }
 
 h1 {
     color: #ffb6c1; /* Light pink color */
     font-size: 2.5rem;
     margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth transition for text color */
 }
 
 h2, h3 {
     color: #ffb6c1; /* Light pink color */
     font-size: 2rem;
     margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth transition for text color */
 }
 
 ul {
@@ -105,7 +116,7 @@ ul li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Smooth transition for text color */
 }
 
 ul li a:hover {
@@ -126,6 +137,12 @@ ul li a:hover {
     font-size: 1rem;
     background-color: #555; /* Darker input background */
     color: #fff; /* Light text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #ffb6c1; /* Light pink border on focus */
 }
 
 .btn {
@@ -135,12 +152,13 @@ ul li a:hover {
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
     font-size: 1rem;
 }
 
 .btn:hover {
     background-color: #ff1493; /* Brighter pink on hover */
+    transform: scale(1.05); /* Scale up button on hover */
 }
 
 .output-box {
